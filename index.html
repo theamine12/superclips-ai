@@ -1,0 +1,54 @@
+cat << 'EOF' > index.html
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SuperClips AI - Turn YouTube Videos into 20 Viral Shorts</title>
+    <meta name="description" content="Convert any YouTube link into 20 viral 60-second clips for TikTok & Shorts automatically with AI.">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-[#09090b] text-white min-h-screen font-sans antialiased">
+    <header class="border-b border-zinc-800 bg-[#09090b]/80 backdrop-blur sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
+            <div class="flex items-center space-x-3">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-orange-600 to-amber-500 flex items-center justify-center shadow-lg shadow-orange-500/20">
+                    <i class="fa-solid fa-bolt text-white text-lg"></i>
+                </div>
+                <span class="text-xl font-black tracking-wider bg-gradient-to-r from-white via-zinc-200 to-orange-500 bg-clip-text text-transparent">SuperClips<span class="text-orange-500">.ai</span></span>
+            </div>
+            <div class="flex items-center space-x-4">
+                <span class="px-3 py-1 bg-zinc-900 border border-zinc-800 rounded-full text-xs text-orange-400 font-medium">
+                    <i class="fa-solid fa-fire mr-1"></i> 3 Free Credits
+                </span>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-4xl mx-auto px-6 py-20 text-center">
+        <div class="inline-flex items-center space-x-2 px-4 py-2 rounded-full bg-orange-500/10 border border-orange-500/20 text-orange-400 text-sm mb-6">
+            <i class="fa-solid fa-wand-magic-sparkles"></i>
+            <span>AI-Powered YouTube to Shorts Repurposing</span>
+        </div>
+        <h1 class="text-5xl md:text-6xl font-black tracking-tight mb-6 leading-tight">
+            Turn 1 Long Video Into <span class="bg-gradient-to-r from-orange-500 to-amber-400 bg-clip-text text-transparent">20 Viral Shorts</span> in Seconds.
+        </h1>
+        <p class="text-zinc-400 text-lg mb-10 max-w-2xl mx-auto">
+            Drop your YouTube link below and let our advanced AI extract the best moments, crop to 9:16, and add auto-captions instantly.
+        </p>
+
+        <div class="bg-zinc-900/80 border border-zinc-800 p-3 rounded-2xl shadow-2xl flex flex-col md:flex-row gap-3">
+            <div class="relative flex-1">
+                <i class="fa-brands fa-youtube absolute left-4 top-1/2 -translate-y-1/2 text-red-500 text-xl"></i>
+                <input type="url" placeholder="Paste YouTube Link (e.g., https://youtu.be/...)" class="w-full bg-zinc-950 border border-zinc-800 rounded-xl py-4 pl-12 pr-4 text-white placeholder-zinc-500 focus:outline-none focus:border-orange-500 transition">
+            </div>
+            <button class="bg-gradient-to-r from-orange-600 to-amber-500 hover:from-orange-500 hover:to-amber-400 font-bold px-8 py-4 rounded-xl transition shadow-lg shadow-orange-600/20 flex items-center justify-center space-x-2 cursor-pointer">
+                <span>Generate Clips</span>
+                <i class="fa-solid fa-arrow-right"></i>
+            </button>
+        </div>
+    </main>
+</body>
+</html>
+EOF
